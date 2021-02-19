@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1 class="tittle">Create your pokemon trainer</h1>
-<div class="container">
+<div class="container inactive">
     <form>
         <p>Name</p>
         <input class="input" type="text" placeholder="Name">
@@ -26,11 +26,28 @@
         <h2>Girl</h2>
     </div>
 </div>
-<input type="button" value="Create" class="createBtn">
+<div class="cards_container">
+    <div class="container">
+        <div class="card gender__option">
+            <div class="circle-ch"></div>
+            <img src="./assets/boy.png" alt="" class="girl">
+            <h2>Boy</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card gender__option">
+            <div class="circle-ch"></div>
+            <img src="./assets/girl.png" alt="" class="girl">
+            <h2>Girl</h2>
+        </div>
+    </div>
+</div>
+<input type="button" value="Create" class="createBtn" disabled>
 
 <div class="bg-circle bg-circle--top"></div>
 <div class="bg-circle bg-circle--right"></div>
 <div class="bg-circle bg-circle--left"></div>
 
+<script src="./scripts/main.js"></script>
 </body>
 </html>
