@@ -1,0 +1,127 @@
+@import './variables';
+@import './form';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: $secondary;
+    background: linear-gradient(104.37deg, #FF6868 12.46%, #FFBEA2 100%);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+
+        &--top {
+            width: 958px;
+            height: 958px;
+            left: 600px;
+            top: -325px;
+            background: #FFD7A8;
+        }
+
+        &--right {
+            width: 958px;
+            height: 958px;
+            left: 800px;
+            top: 200px;
+            background: #FFF8BB;
+        }
+
+        &--left {
+            width: 958px;
+            height: 958px;
+            left: 300px;
+            top: 270px;
+            background: #FF7979;
+        }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 16%;
+    align-items: center;
+    
+    input {
+        border: none;
+        color: #D3736B;
+        &::placeholder{
+            color: #D3736B;
+        }
+    }
+}
+
+.card {
+    position: relative;
+    height: 320px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+
+    h2 {
+        margin: auto;
+        color: #D3736B;
+    }
+
+    img {
+        z-index: 2;
+        width: 50%;
+        margin: auto;
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.circle-ch {
+    position: absolute;
+    border-radius: 50%;
+    background: #FF6D6D;
+    width: 140px;
+    height: 140px;
+    top: 70px;
+    left: 40px;
+    margin: auto;
+}
+
+.tittle {
+    display: flex;
+    color: white;
+    margin: 30px auto;
+    font-size: 25px;
+    text-align: center;
+    width: fit-content;
+    padding: 20px 0;
+}
+
+.createBtn {
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20.7974px;
+    background: none;
+    padding: 5px 40px 5px 40px;
+    color: white;
+    display: flex;
+    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+input:focus {
+    outline: none;
+}
