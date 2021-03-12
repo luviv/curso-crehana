@@ -111,6 +111,13 @@ body {
   color: #D3736B;
 }
 
+.container--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .card {
   position: relative;
   height: 320px;
@@ -203,8 +210,8 @@ body {
 }
 
 .createBtn:disabled {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: .3;
   cursor: initial;
 }

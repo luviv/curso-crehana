@@ -59,6 +59,10 @@ body {
             color: #D3736B;
         }
     }
+    
+    &--reverse{
+        flex-direction: row-reverse;
+    }
 }
 
 .card {
@@ -131,7 +135,7 @@ body {
     }
 
     &:disabled {
-        transform: scale(1.2);
+        transform: scale(1.1);
         opacity: .3;
         cursor: initial;
     }
